@@ -22,11 +22,8 @@ def main():
     try:
     	vk_session.authorization()
     	       
-    except vk_api.AuthorizationError as error_msg:
-        print(error_msg)
-        return
+     vk = vk_session.get_api()
 
-   
     i=1
     while 1 :
         response = vk.account.setOnline()
@@ -36,11 +33,14 @@ def main():
                 print "Success"
         else:
                 print "Failed, error:", response
+                time.sleep(30)
                 continue
 
         print d
         i = i+1
-        printsleep(600)
+        print
+
+        time.sleep(600)
 
     
 
