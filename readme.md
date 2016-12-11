@@ -1,2 +1,2 @@
-to use it u need \n
+to use it u need </br>
 `pip install vk_api` 
