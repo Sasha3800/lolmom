@@ -12,7 +12,7 @@ def auth_handler():
 
 def main():
     
-    print "Login"
+    print "Login:"
     login = raw_input()
     password = getpass.getpass()
     vk_session = vk_api.VkApi(login,
